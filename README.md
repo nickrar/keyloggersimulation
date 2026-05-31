@@ -39,9 +39,11 @@ This project demonstrates a realistic keylogger that:
 
 ## 1. Server Setup (Command & Control)
 
-You can run the server on a **Linode VPS** (realistic infrastructure) or on your **localhost** for testing.
+You can run the server on a **Linode VPS** (realistic infrastructure) or on your any preferred VPS for testing.
 
-### Option A – Linode VPS
+### 1.1 Linode VPS
+
+1. **Create a Linode** (Ubuntu 22.04 LTS, Nanode plan works).
 
 ```bash
 # SSH into your Linode (Ubuntu 22.04)
@@ -59,24 +61,6 @@ ssh root@<your_linode_ip>
 cd keylogger-simulation
 node server.js
 ```
-### Option B – Localhost (lab)
-
-```bash
-# Install Node.js from https://nodejs.org (LTS version)
-
-# Clone the repository
-git clone https://github.com/nickrar/keylogger-simulation.git
-cd keylogger-simulation
-
-# Install dependencies
-npm install express body-parser
-
-# Start the server
-node server.js
-```
-Find your local IP (ipconfig on Windows, ip addr on Linux/Mac).
-
-Access the dashboard: http://localhost:8080 or http://<your_local_ip>:8080
 
 ## 2. Keylogger Configuration
 
@@ -150,7 +134,7 @@ Expected output (example):
 Commercial: None
 Python: 3.9.9 (tags/v3.9.9:ccb0e6a, Nov 15 2021, 18:08:50) [MSC v.1929 64 bit (AMD64)]
 Flavor: CPython Official
-Executable: ~\Desktop\python-keylogger-main\keylogger_env\Scripts\python.exe
+Executable: ~\Desktop\keylogger-simulation-main\keylogger_env\Scripts\python.exe
 OS: Windows
 Arch: x86_64
 WindowsRelease: 10
