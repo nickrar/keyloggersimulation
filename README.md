@@ -49,7 +49,7 @@ ssh root@<your_linode_ip>
 
 # Clone the repository
 git clone https://github.com/nickrar/keylogger-simulation.git
-cd keyloggersimulation
+cd keylogger-simulation
 
 # Run the automatic setup script (installs Node.js, npm, dependencies, reboots)
 python3 setup.py
