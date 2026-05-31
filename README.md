@@ -1,6 +1,7 @@
 </div>
 
 <div align="center">
+  <img src="banner.png" alt="keylogger-banner" width="200" />
   <h1>Keylogger Simulation with Rule-based Pattern Detection Algorithm</h1>
   <p>For authorised cyber security testing only. 5 detection rules. Built with Python & Node.js.</p>
 </div>
@@ -64,9 +65,9 @@ cd express-server-basic
 node server.js
 ```
 
-## 2. Keylogger Configuration
+## 2. Keylogger Configuration (The Victim Machine)
 
-First, clone the keylogger repository:
+On the machine where you will run the keylogger (the victim machine), clone this repository:
 
 ```bash
 git clone https://github.com/nickrar/keylogger-simulation.git
