@@ -48,7 +48,7 @@ You can run the server on a **Linode VPS** (realistic infrastructure) or on your
 ssh root@<your_linode_ip>
 
 # Clone the repository
-git clone https://github.com/nickrar/keyloggersimulation.git
+git clone https://github.com/nickrar/keylogger-simulation.git
 cd keyloggersimulation
 
 # Run the automatic setup script (installs Node.js, npm, dependencies, reboots)
@@ -56,7 +56,7 @@ python3 setup.py
 
 # After reboot, SSH again and start the server
 ssh root@<your_linode_ip>
-cd keyloggersimulation
+cd keylogger-simulation
 node server.js
 ```
 ### Option B – Localhost (lab)
@@ -65,8 +65,8 @@ node server.js
 # Install Node.js from https://nodejs.org (LTS version)
 
 # Clone the repository
-git clone https://github.com/nickrar/keyloggersimulation.git
-cd keyloggersimulation
+git clone https://github.com/nickrar/keylogger-simulation.git
+cd keylogger-simulation
 
 # Install dependencies
 npm install express body-parser
