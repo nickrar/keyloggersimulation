@@ -76,6 +76,21 @@ node server.js
 
 ## 2. Keylogger Configuration 
 
+The keylogger compilation process requires Python. If you don't have Python installed, follow these steps:
+
+1. Download Python 3.9.9 from the official archive:  
+   [https://www.python.org/downloads/release/python-399/](https://www.python.org/downloads/release/python-399/)
+2. Scroll down to **Files** and choose the appropriate installer:
+   - For 64‑bit Windows: `Windows x86-64 executable installer`
+   - For 32‑bit Windows: `Windows x86 executable installer`
+3. Run the installer.
+4. **IMPORTANT:** Check the box **"Add Python to PATH"** at the bottom of the installer window.
+5. Click **Install Now** and complete the installation.
+6. Verify the installation by opening a **new Command Prompt** or PowerShell window and typing:
+   
+   ```cmd
+   python --version
+
 On the machine where you will run the keylogger (the victim machine), clone this repository:
 
 ```bash
@@ -166,7 +181,7 @@ Add the bin folder of MinGW‑w64 to your system PATH.
 
 ## 3.2 Install keylogger dependencies
 
-With the virtual environment active, create a requirements.txt file containing exactly these lines:
+With the virtual environment active, given a requirements.txt file containing exactly these lines:
 
 ```bash
 certifi==2022.6.15
@@ -206,7 +221,9 @@ Explanation of every flag:
 
 After a successful build you will find keylogger.exe in the current directory.
 
-## 3.4 Test the compiled keylogger
+## 4. Distribute the .exe (Victim Interaction)
+
+Now you have a working keylogger executable. To simulate a real attack:
 
 1. Make sure your C2 server is running (node server.js).
 
@@ -227,7 +244,23 @@ cat keyboard_capture.txt
 cat flagged_capture.txt
 ```
 
-You should see the raw keystrokes and the flagged email/password, confirming the full chain works.
+
+## 4.1 Victim Experience (What the Victim Sees)
+The victim downloads and runs the .exe (e.g., “Chrome_Update.exe”).
+
+- Nothing appears on screen – the program runs in the background.
+- All keystrokes are logged and sent to your server.
+- The victim remains unaware (unless they check Task Manager).
+
+## 4.2 Monitoring the Dashboard
+As the attacker, open your browser and go to:
+
+- http://<your_server_ip>:8080
+
+You will see:
+- Raw keystroke logs (every few seconds)
+- Flagged high‑value data (emails, passwords, credit cards, etc.)
+- A counter showing unique flagged events per victim IP
 
 ## License
 This project is provided for educational and authorized security research purposes only.
