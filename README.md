@@ -1,7 +1,7 @@
 </div>
 
 <div align="center">
-  <img src="banner.png" alt="keylogger-banner" width="350" />
+  <img src="banneer.png" alt="keylogger-banner" width="350" />
   <h1>Keylogger Simulation with Rule-based Pattern Detection Algorithm</h1>
   <p>For authorised cyber security testing only. 5 detection rules. Built with Python & Node.js.</p>
 </div>
