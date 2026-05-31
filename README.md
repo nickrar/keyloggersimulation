@@ -40,7 +40,8 @@ This project demonstrates a realistic keylogger that:
 ## 1. Server Setup (Command & Control)
 
 You can run the server on a **Linode VPS** (realistic infrastructure) or on your any preferred VPS for testing.
-Visit https://github.com/nickrar/express-server-basic for more details
+
+**Visit [https://github.com/nickrar/express-server-basic](https://github.com/nickrar/express-server-basic) for detailed setup instructions.**
 
 ### 1.1 Linode VPS
 
