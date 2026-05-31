@@ -89,7 +89,7 @@ _ip_raw = b'\x0e\x08\x0d\x11\x0d\x0c\x06\x11\x0e\x09\x0d\x11\x0e\x0d'
 
 Replace it with your encoded bytes.
 
-### 2.3 (Optional) Change the port
+### 2.3 Change the port (Optional) 
 
 If you use a different port than 8080, encode the port as a string (e.g., "9090") and replace:
 
