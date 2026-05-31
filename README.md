@@ -1,7 +1,7 @@
 </div>
 
 <div align="center">
-  <img src="banner.png" alt="keylogger-banner" width="500" />
+  <img src="banner.png" alt="keylogger-banner" width="400" />
   <h1>Keylogger Simulation with Rule-based Pattern Detection Algorithm</h1>
   <p>For authorised cyber security testing only. 5 detection rules. Built with Python & Node.js.</p>
 </div>
@@ -15,9 +15,14 @@
 
 </div>
 
-> **⚠️ EDUCATIONAL & AUTHORISED USE ONLY**  
+> **EDUCATIONAL & AUTHORISED USE ONLY**  
+
+<div align="center">
+  <img src="video.gif" alt="keylogger simulation demo" width="700" />
+</div>
+
 > This tool is for red‑team exercises, security research, and authorised penetration testing.  
-> Do **not** deploy on any system without explicit written permission.  
+> Do **not** deploy on any system without explicit written permission. 
 > See [DISCLAIMER.md](DISCLAIMER.md) for full legal terms.
 
 ## Overview
@@ -42,7 +47,7 @@ This project demonstrates a realistic keylogger that:
 1. Set up the C2 server (VPS).
 2. Configure the keylogger with your server IP.
 3. Compile the keylogger into a `.exe` file.
-4. Distribute the `.exe` to the victim (e.g., via fake download, USB drop, etc.).
+4. Distribute the `.exe` to the authorized victim machine.
 
 All commands below are run on **your own machine** (the attacker’s system), unless stated otherwise.
 ---
