@@ -34,9 +34,9 @@ This project demonstrates a realistic keylogger that:
 - The server applies **rule‑based pattern detection** to automatically flag high‑value data:
   - Email addresses
   - Passwords (keyword‑based and heuristic)
-  - Credit card numbers
-  - Social Numbers (international and common formats)
-  - API keys (32+ characters)
+  - NRIC numbers
+  - Mobile phone numbers
+  - OTP / 2FA code and PINs (4-6 digits)
 - A live **dashboard** – no need to watch raw keystroke logs
 - **Persistent local logs** on the server:
   - `keyboard_capture.txt` — all raw keystrokes received
