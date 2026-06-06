@@ -36,6 +36,7 @@ This project demonstrates a realistic keylogger that:
   - Passwords (keyword‑based and heuristic)
   - NRIC numbers
   - Mobile phone numbers
+  - Passport numbers
   - OTP / 2FA code and PINs (4-6 digits)
 - A live **dashboard** – no need to watch raw keystroke logs
 - **Persistent local logs** on the server:
