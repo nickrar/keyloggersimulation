@@ -28,7 +28,7 @@
 ## Overview
 
 This project demonstrates a realistic keylogger that:
-- Silently captures keystrokes (Windows, Linux, macOS)
+- Silently captures keystrokes (Windows)
 - Uses **XOR obfuscation** and **dynamic imports** to evade basic antivirus
 - Sends exfiltrated data to a remote C2 server with **random jitter** and **User‑Agent rotation**
 - The server applies **rule‑based pattern detection** to automatically flag high‑value data:
