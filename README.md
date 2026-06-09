@@ -227,7 +227,7 @@ Explanation of every flag:
 
 After a successful build you will find keylogger.exe in the current directory.
 
-## 4. Distribute the .exe (Victim Interaction)
+## 4. Distribute the .exe (On a test machine)
 
 Now you have a working keylogger executable. To simulate a real attack:
 
@@ -251,15 +251,15 @@ cat flagged_capture.txt
 ```
 
 
-## 4.1 Victim Experience (What the Victim Sees)
-The victim downloads and runs the .exe (e.g., “Chrome_Update.exe”).
+## 4.1 User Experience (What the user see on a test machine)
+The user downloads and runs the .exe (e.g., “Chrome_Update.exe”).
 
 - Nothing appears on screen – the program runs in the background.
-- All keystrokes are logged and sent to your server.
-- The victim remains unaware (unless they check Task Manager).
+- All keystrokes are logged and sent to C2 server.
+- The windows test machine remains unaware (unless they check Task Manager).
 
 ## 4.2 Monitoring the Dashboard
-As the attacker, open your browser and go to:
+Open your browser and go to:
 
 - http://<your_server_ip>:8080
 
